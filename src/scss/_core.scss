@@ -1,0 +1,10 @@
+body {
+	@include fontText($fontUbuntu, $fw400, $fs16, $lh185, $textGrayColor);
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+

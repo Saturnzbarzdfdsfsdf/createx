@@ -1,0 +1,15 @@
+@mixin fontText($fontUbuntu, $fw400, $fs16, $lh185, $textGrayColor) {
+	font-family: $fontUbuntu;
+	font-weight: $fw400;
+	font-size: $fs16;
+	line-height: $lh160;
+	color: $textGrayColor;
+};
+
+
+@mixin btnSlider($fs16, $fw700, $p15p40) {
+	font-size: $fs16;
+  font-weight: $fw700;
+	padding: $p15p40;
+
+}

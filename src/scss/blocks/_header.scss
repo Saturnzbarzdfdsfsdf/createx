@@ -1,0 +1,78 @@
+.header {
+	padding: 30px;
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__contacts {
+		display: flex;
+		position: relative;
+		text-wrap: nowrap;
+
+		gap: $g90;
+
+		p {
+			font-size: $fs14;
+			font-weight: $fw700;
+			line-height: $lh150;
+			color: $headerGrayColor;
+		}
+
+		a {
+			font-size: $fs18;
+			line-height: $lh150;
+			color: $textTitleColor;
+		}
+	}
+}
+
+.nav {
+	text-wrap: nowrap;
+
+	&__list {
+		display: flex;
+		gap: $g40;
+
+		&-item {
+			cursor: pointer;
+
+			color: $headerGrayColor;
+			font-weight: $fw700;
+			line-height: $lh160;
+		}
+	}
+}
+
+.header__contacts::before {
+	position: absolute;
+	content: '';
+
+	width: 40px;
+	height: 40px;
+
+	left: -50px;
+	top: 5px;
+
+	// background: black;
+	background: url('./../assets/icons/iPhone.svg') no-repeat;
+}
+
+.header__contacts::after {
+	position: absolute;
+	content: '';
+
+	width: 40px;
+	height: 40px;
+
+	left: 150px;
+	top: 5px;
+
+	// background: black;
+	background: url('./../assets/icons/Chat.svg') no-repeat;
+}
+
+.active {
+	color: $accentColor;
+}

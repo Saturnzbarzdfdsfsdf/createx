@@ -1,0 +1,86 @@
+.slider {
+  position: relative;
+  aspect-ratio: 1920 / 988;
+  color: $headerTextWhiteColor;
+
+  &__content-flex {
+    position: absolute;
+    top: 205px;
+  }
+
+  &__title {
+    font-size: $fs72;
+    font-weight: $fw700;
+    line-height: $lh130;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+    span {
+      color: $accentColor;
+    }
+  }
+
+  &__text {
+    font-size: $fs20;
+    line-height: $lh150;
+    max-width: 600px;
+    padding-bottom: 50px;
+  }
+
+}
+
+.slider__btn {
+
+  line-height: 52px;
+  text-transform: uppercase;
+
+  &-about{
+  @include btnSlider($fs16, $fw700,$p14p39);
+  border: 1px solid white;
+  margin-right: 25px;
+  
+}
+
+&-submit {
+  @include btnSlider($fs16, $fw700, $p15p40);
+  background-color: $accentColor;
+  
+  }
+}
+
+
+
+.slider::before {
+  content: '';
+  position: absolute;
+  
+  margin: 0 auto;
+  z-index: -2;
+  
+	width: 1920px;
+  
+	inset: 0;
+  
+	// background: black;
+	background: url('./../assets/img/bg-image.jpeg') no-repeat;
+}
+
+.slider::after {
+  content: '';
+  position: absolute;
+  
+  margin: 0 auto;
+  z-index: -1;
+  
+	width: 1920px;
+  
+	inset: 0;
+  
+	// background: black;
+	background: rgba(30, 33, 44, 0.6);
+}
+
+// .swiper-slide {
+
+//   // aspect-ratio: 1920 / 988;
+//   // aspect-ratio: 1920 / 855;
+// }
