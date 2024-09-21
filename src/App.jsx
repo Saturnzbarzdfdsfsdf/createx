@@ -3,6 +3,7 @@
 // import './scss/app.scss'
 
 import { Header, SwiperSlider } from './components/index'
+import { Home } from './page/index'
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<Header />
 			<div className='content'>
 				<SwiperSlider/>
+				<Home/>
 				<div className='container'>
 				</div>
 			</div>

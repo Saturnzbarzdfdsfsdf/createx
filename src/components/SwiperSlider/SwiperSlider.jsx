@@ -1,38 +1,35 @@
-import React from 'react'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules'
 
 import Sldier from '../Slider/Sldier'
 
-// Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
+import 'swiper/swiper-bundle.css'
 
 const SwiperSlider = () => {
 	return (
 		<Swiper
-	      // install Swiper modules
-      // modules={[Navigation, Pagination, Scrollbar]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+			modules={[Navigation, Pagination]}
+			// spaceBetween={50}
+			slidesPerView={1}
+			navigation
+			pagination={{
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + (index + + 1 ) + '</span>'
+				},
+			}}
+			onSwiper={swiper => console.log(swiper)}
+			onSlideChange={() => console.log('slide change')}
 		>
 			<SwiperSlide>
 				<div className='slider'>
-						<Sldier />
+					<Sldier />
 				</div>
 			</SwiperSlide>
-			<SwiperSlide> 
-					<div className='slider'>
-						<Sldier />
+			<SwiperSlide>
+				<div className='slider'>
+					<Sldier />
 				</div>
 			</SwiperSlide>
 		</Swiper>

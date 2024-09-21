@@ -8,3 +8,20 @@ body {
 	padding: 0 10px;
 }
 
+
+.title {
+
+	color: $textTitleColor;
+	font-size: $fs46;
+	line-height: $lh130;
+	font-weight: $fw700;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.subtitle {
+	text-align: center;
+	font-size: $fs18;
+	line-height: $lh150;
+	color: $textGrayColor;
+}

@@ -4,12 +4,49 @@
 	font-size: $fs16;
 	line-height: $lh160;
 	color: $textGrayColor;
-};
-
+}
 
 @mixin btnSlider($fs16, $fw700, $p15p40) {
 	font-size: $fs16;
-  font-weight: $fw700;
+	font-weight: $fw700;
 	padding: $p15p40;
+}
 
+@mixin btnPrev() {
+	content: '';
+
+	position: absolute;
+	z-index: 10;
+
+	left: 20px;
+	width: 48px;
+	height: 48px;
+
+	opacity: 0.5;
+	background-color: $headerTextWhiteColor;
+	color: $headerGrayColor;
+	background-image: url('./../assets/icons/Left.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	// transform: rotate(180deg);
+	border-radius: 50%;
+}
+@mixin btnNext() {
+	content: '';
+
+	position: absolute;
+	z-index: 10;
+	
+	right: 20px;
+	width: 48px;
+	height: 48px;
+
+	opacity: 0.5;
+	color: $headerGrayColor;
+	background-color: $headerTextWhiteColor;
+	background-image: url('./../assets/icons/Left.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	transform: rotate(180deg);
 }
