@@ -4,7 +4,7 @@ const WeCreatex = () => {
 	return (
 		<section className='createx'>
 			<div className='container'>
-				<div className='createx__desc'>
+				<div className='createx__desc  none'>
 					<h2 className='createx__desc-title title'>
 						We are Createx Construction Bureau{' '}
 					</h2>
@@ -14,7 +14,7 @@ const WeCreatex = () => {
 					</p>
 				</div>
 
-				<div className='createx__video'>
+				<div className='createx__video none'>
 					<img src={bgImgWe} alt='' />
 					<div className='createx__overlay'></div>
 					<a href='#' className='createx__video-play'></a>

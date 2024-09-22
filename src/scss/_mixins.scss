@@ -23,7 +23,7 @@
 	height: 48px;
 
 	opacity: 0.5;
-	background-color: $headerTextWhiteColor;
+	background-color: $textWhiteColor;
 	color: $headerGrayColor;
 	background-image: url('./../assets/icons/Left.svg');
 	background-repeat: no-repeat;
@@ -36,17 +36,30 @@
 
 	position: absolute;
 	z-index: 10;
-	
+
 	right: 20px;
 	width: 48px;
 	height: 48px;
 
 	opacity: 0.5;
 	color: $headerGrayColor;
-	background-color: $headerTextWhiteColor;
+	background-color: $textWhiteColor;
 	background-image: url('./../assets/icons/Left.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 50%;
 	transform: rotate(180deg);
+}
+
+@mixin inputs() {
+	color: $accentColor;
+	background-color: $backgroundInput;
+	border: 1px solid $borderInput;
+	font-size: $fs14;
+	padding-left: 10px;
+	border-radius: 4px;
+	width: 260px;
+	height: 45px;
+	font-weight: $fw500;
+	font-size: $fs18;
 }

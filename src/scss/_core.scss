@@ -8,9 +8,7 @@ body {
 	padding: 0 10px;
 }
 
-
 .title {
-
 	color: $textTitleColor;
 	font-size: $fs46;
 	line-height: $lh130;
@@ -24,4 +22,13 @@ body {
 	font-size: $fs18;
 	line-height: $lh150;
 	color: $textGrayColor;
+}
+
+.none {
+	display: none;
+}
+
+.index {
+position: absolute;
+z-index: -10;
 }

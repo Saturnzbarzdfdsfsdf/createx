@@ -1,12 +1,17 @@
 // import React from 'react'
 
-import { WeCreatex } from '../components/index'
+import { WeCreatex, CoreValue, FormAsk, Services } from '../components/index'
+
+
 const Home = () => {
   return (
-    <div>
-     <WeCreatex/>
-    </div>
-  )
+		<>
+			<WeCreatex />
+			<CoreValue />
+			<FormAsk />
+			<Services />
+		</>
+	)
 }
 
 export default Home

@@ -11,7 +11,7 @@ const Sldier = () => {
 						"CRATEX", a leading US manufacturer since 1927, supplies
 						high-quality rubber abrasives for grinding, polishing, and
 						deburring. Their products, including wheels, points, and sticks, are
-						used in various industries for precise and durable results."{' '}
+						used in various industries for precise and durable results.
 					</p>
 
 					<div className='slider__btn'>

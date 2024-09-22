@@ -5,13 +5,17 @@ $textGrayColor: rgb(120, 122, 128);;
 $accentColor: rgb(255, 90, 48);
 
 $headerGrayColor: rgb(66, 69, 81);
-$headerTextWhiteColor: rgb(255, 255, 255);
+$textWhiteColor: rgb(255, 255, 255);
 
+$borderInput: rgb(215, 218, 221);
+$backgroundInput: rgb(244, 245, 247);
+$bgGrayColor: rgb(244, 245, 247);
 
 
 
 // gap
 
+$g25: 25px;
 $g40: 40px;
 $g90: 90px;
 
@@ -22,19 +26,26 @@ $p15p40: 17px 40px;
 $p14p39: 16px 39px;
 
 
+//margin bottom
+
+$mb10: 10px; 
+
+
 // font size
 
 $fs14: 14px;
 $fs16: 16px;
 $fs18: 18px;
 $fs20: 20px;
-$fs30: 30px;
+// $fs30: 30px;
+$fs28: 28px;
 $fs46: 46px;
 $fs72: 72px;
 
 // line height 
 
 $lh52px: 52px;
+$lh45px: 45px;
 $lh130: 130%;
 $lh150: 150%;
 $lh160: 160%;
@@ -44,6 +55,7 @@ $lh185: 185%;
 // font-weight
 
 $fw700:700;
+$fw500:500;
 $fw400:400;
 
 // font-family

@@ -1,0 +1,64 @@
+.ask {
+	margin-bottom: 200px;
+
+	&__title {
+		color: $textTitleColor;
+		font-size: $fs28;
+		font-weight: $fw700;
+		line-height: $lh150;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__form {
+		display: flex;
+		justify-content: center;
+		gap: $g25;
+		
+	}
+}
+
+.input__box {
+	position: relative;
+
+	.input {
+		@include inputs()
+
+	}
+
+	.input:focus {
+		outline: 1px solid rgb(53, 206, 15);
+	}
+
+	.placeholder {
+		opacity: 0.6;
+		position: absolute;
+		transition: all 0.3s ease-in-out;
+
+		left: 15px;
+		bottom: 10px;
+	}
+	
+	.input:focus ~ .placeholder,
+	.input:not(:placeholder-shown) ~ .placeholder {
+		transform: translateY(-32px);
+		color: $accentColor;
+
+		opacity: 1;
+	}
+}
+
+#massage {
+	width: 400px;
+}
+
+#submit-btn {
+	text-transform: uppercase;
+	line-height: $lh45px;
+	font-weight: $fw700;
+	color: $textWhiteColor;
+	background-color: $accentColor;
+	border-radius: 4px;
+	width: 105px;
+	height: 44px;
+}

@@ -1,0 +1,40 @@
+.core{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+
+  &__top {
+
+
+    &-subtitle {
+      margin-bottom: 60px;
+    }
+  }
+
+}
+
+
+.core__bottom {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+
+  &-item {
+    flex-basis: 280px;
+    text-align: center;
+
+    .core__bottom-subtitle{
+      color: $textTitleColor;
+      font-size: $fs20;
+      line-height: $lh150;
+      margin-bottom: $mb10;
+      font-weight: $fw700;
+      margin-top: 10px;
+    } 
+  }
+
+}
